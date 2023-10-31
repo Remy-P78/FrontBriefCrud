@@ -1,1 +1,26 @@
-<p>accueil works!</p>
+<form [formGroup]="connexion" (ngSubmit)="OnConnect()">
+  <h1>Connexion</h1>
+  <label for="FormControlInput1"></label>
+  <input
+    type="text"
+    id="FormControlInput1"
+    placeholder="Votre email"
+    formControlName="email"
+    name="email"
+  />
+
+  <label for="inputPassword5"></label>
+  <input
+    type="password"
+    formControlName="password"
+    id="inputPassword5"
+    placeholder="Votre mot de passe"
+    name="password"
+  />
+
+  <div>
+    <button type="submit" class="btn connexion" [disabled]="!connexion.valid">
+      Se connecter
+    </button>
+  </div>
+</form>

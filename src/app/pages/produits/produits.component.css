@@ -1,3 +1,7 @@
+* {
+    margin-left: 5px
+}
+
 tr > td {
   border-bottom: 1px solid #ccc;
 }
@@ -5,6 +9,7 @@ tr > td {
 
 tr:first-child > td {
   border-top: 1px solid black;
+  margin-left: 5px
 }
 
 
@@ -36,4 +41,29 @@ p-table button:last-child {
   color: white;
 }
 
+/* formulaire */
 
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button:last-child{
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(26, 157, 37);
+  color:white;
+  font-size: 1.1em;
+}
