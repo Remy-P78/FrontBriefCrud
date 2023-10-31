@@ -1,25 +1,36 @@
-/* Séparation des produits par une ligne horizontale fine */
 tr > td {
   border-bottom: 1px solid #ccc;
 }
 
-/* Séparation du header du reste du tableau par une ligne noire */
+
 tr:first-child > td {
   border-top: 1px solid black;
 }
 
-/* Centrer le contenu des cellules */
-td {
+
+td,th{
   text-align: center;
 }
 
-/* Styles pour le titre et le premier bouton */
-h1, p-table button:first-child {
+h1 + button {
+font-size: 1.2em;
+}
+
+h1, button:first-child, h1 + button {
   background-color: #4D00FF;
   color: white;
 }
 
-/* Style pour le deuxième bouton */
+td button{
+  font-size: 1.1em;
+  margin-left: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+}
+
 p-table button:last-child {
   background-color: #E20032;
   color: white;

@@ -20,6 +20,7 @@ export class ProduitService {
   }
 
   addProduit(produit: Produit): Observable<Produit> {
+    console.log("passage",produit);
     return this.http.post<Produit>(
       'http://localhost:3000/api/produit',
       produit

@@ -1,0 +1,26 @@
+<h1>Ajouter</h1>
+
+<form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+    <input type="text"
+    name="nom"
+    ngModel required
+    >
+
+    <input type="number"
+    name="prix"
+    ngModel required
+    >
+
+    <input type="number"
+    name="quantite"
+    ngModel required
+    >
+
+    <input type="number"
+    name="id_categorie"
+    ngModel required
+    >
+
+    <button type="Submit" [disabled]="myForm.invalid"> Creer produit </button>
+
+</form>

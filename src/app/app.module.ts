@@ -7,9 +7,11 @@ import { ProduitsComponent } from './pages/produits/produits.component';
 import { FormsModule } from '@angular/forms';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { TableModule } from 'primeng/table';
+import { AddProduitComponent } from './pages/add-produit/add-produit.component';
+
 
 @NgModule({
-  declarations: [AppComponent, ProduitsComponent, AccueilComponent],
+  declarations: [AppComponent, ProduitsComponent, AccueilComponent, AddProduitComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
